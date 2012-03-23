@@ -1,4 +1,4 @@
-## IMD
+# IMD
 
 This is a snapshot of the code for a portable mp3 player I made in High School. It was run on a Gumstix with a 128x128 OLLED screen for output, and a 3-axis accelerometer for input. Shortly after becoming fully functional, it short-circuited :(
 
@@ -10,10 +10,10 @@ This was done before I knew about a lot of things, and I haven't touched the cod
  - Gumstix is overkill (I did try cheaper options, and they were significantly more difficult back then)
  - Should've used Doxygen-style comments
 
-Details/Pics for v1.5: http://www.jbotelho.com/?p=hw_ovw
+#### Details/Pics for v1.5: http://www.jbotelho.com/?p=hw_ovw
 
 
-Original README:
+## Files
 
 * adc driver - Contains source code for modified UCB1400 kernel module that enables all the ADC lines.
 * splash - Splash screen that shows IMD logo on gumstix's OLED screen at bootup.
