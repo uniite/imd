@@ -3,6 +3,7 @@
 This is a snapshot of the code for a portable mp3 player I made in High School. It was run on a Gumstix with a 128x128 OLLED screen for output, and a 3-axis accelerometer for input. Shortly after becoming fully functional, it short-circuited :(
 
 This was done before I knew about a lot of things, and I haven't touched the code since. Please don't hate on the obvious, such as:
+
  - The Makefile and #includes are a mess
  - Using named pipes for IPC is messier than compiling the C as a Python module ("original" branch)
  - I could have used C++ or Java instead of doing psuedo-OO in C
