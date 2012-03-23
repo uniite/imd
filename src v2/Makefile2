@@ -1,0 +1,47 @@
+# IMD Makefile v2
+
+GUMSTIX_BUILDROOT = /home/notroot/gum-imd-stable
+BUILD_ARM = $(GUMSTIX_BUILDROOT)/build_arm_nofpu
+CC = $(BUILD_ARM)/staging_dir/bin/arm-linux-uclibc-gcc
+
+CFLAGS =  -O2 -D_REENTRANT -mtune=xscale -mcpu=xscale -Wa,-mcpu=xscale
+
+#
+# If you need additional serch paths for include files, then use the -I flag
+# and add them to the CPPFLAGS variable
+#
+
+#CPPFLAGS += -I "/home/notroot/gum1183/build_arm_nofpu/zlib-1.2.3/"
+
+#
+# If you need addional search paths for library files, then use the -L flag
+# and add them to LDFLAGS.
+#
+
+#LDFLAGS += -L "/home/notroot/gum1183/build_arm_nofpu/root/lib/"
+#LDFLAGS += -L "/home/notroot/gum1183/build_arm_nofpu/root/usr/lib/"
+
+#
+# If you need additional libraries, then use -lxxx to search for libxxx.a
+#
+
+LDLIBS = -lpthread -lmad
+
+imd2.o:
+	$(CC) $(CFLAGS) $(LDLIBS) imd.c
+all: imd.o db.o audeng.o gui.o oled.o
+	$(CC) $(CFLAGS) $(LDLIBS) -o imd db.o
+imd.o:
+	$(CC) $(CFLAGS) -c imd.c input.c theme.c
+db.o: audeng.o
+	$(CC) $(CFLAGS) db.c dbe.c audeng.o
+audeng.o:
+	$(CC) $(CFLAGS) -c audeng.c id3.c mp3.c
+gui.o:
+	$(CC) $(CFLAGS) -c gui.c
+oled.o:
+	$(CC) $(CFLAGS) -c oled.c
+
+clean:
+	- rm *.o *.gch
+ 

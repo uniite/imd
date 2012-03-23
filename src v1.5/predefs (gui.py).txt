@@ -1,0 +1,25 @@
+import gui
+from time import sleep
+f = gui.oled.flush
+def r():
+	gui.oled.redraw()
+	f()
+
+def g():
+	print "Top: %s" % gui.curmenu.top
+	print "Index: %s" % gui.curmenu.index
+	print "Cursor: %s" % gui.curmenu.cursor
+
+d = gui.menu_down
+u = gui.menu_up
+h = gui.menu_home
+b = gui.menu_back
+a = gui.menu_action
+p = gui.play_prev
+n = gui.play_next
+lc = gui.load_color
+dr = gui.menu_draw
+r()
+ca = gui.calibrate
+gui.hold = 1
+

@@ -1,0 +1,7 @@
+Needed Updates:
+-Horizontal alignment
+-Real scalable fonts?
+->play mode: misc controls (ffw, eq, vol, etc.)
+-Tighten timings on audio playback (start->progress bar, pause->audio stop)
+-Fix audeng seek..(it skips after you seek)
+-fix ocassional skipping in general...

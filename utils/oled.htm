@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+	body {
+		text-align: center;
+		font-family: arial;
+		font-size: smaller;
+		font-weight: bold;
+	}
+
+	div {
+		background: black;
+		width: 150px;
+		margin: auto;
+	}
+	
+	img {
+		margin: 10px;
+	}
+	
+	input {
+		width: 40px;
+		margin-top: 5px;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<img id="screen" src="http://gumstix.local/" />
+		<!--<span style="color: white;">Port:</span><br />
+		<input type="button" value="8080" onClick="javascript:document.images['screen'].src = 'http://gumstix.local:8080'" />
+		<input type="button" value="8081" onClick="javascript:document.images['screen'].src = 'http://gumstix.local:8081'" />
+		<input type="button" value="8082" onClick="javascript:document.images['screen'].src = 'http://gumstix.local:8082'" />
+		<br />
+		<br />-->
+	</div>
+	<script type="text/javascript">
+		window.setTimeout("reload()", 800)
+		function reload() {
+			temp = document.images["screen"].src;
+			document.images["screen"].src = temp + Math.round(Math.random() * 100);
+			window.setTimeout("reload()", 800);
+		}
+	</script>
+</body>
+</html>

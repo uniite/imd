@@ -1,0 +1,45 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+[Project tree]
+imd
+	+audeng
+		audeng.c
+		audeng.h
+		id3.c
+		mp3.c
+	+db
+		db.c
+		db.h
+		dbe.c
+	+gui
+		font_arial.h
+		gfx.c
+		gui.c
+		gui.h
+		menu.c
+		text.c
+	+imd
+		imd.c
+		imd.h
+		input.c
+		theme.c
+	+oled
+		gpio.c
+		oled.c
+		oled.h
+		spi.c
+		http.c
+	+other
+		Makefile
+[Open project files]
+[Selected Project Files]
+Main=

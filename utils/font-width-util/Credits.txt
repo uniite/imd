@@ -1,0 +1,3 @@
+A good part of the oled code was taken from http://forum.sparkfun.com/viewtopic.php?t=3808&postdays=0&postorder=asc&highlight=oled&start=15 , including the main font, the code for the fonts, and the basis of the oled.h definitions.
+Big thanks go out to KamPutty of SparkFun.com Forums
+Also thanks to SparkFun, and the people who wrote the Gumstix GPIO and SPI examples (see gpio.c and spi.c)

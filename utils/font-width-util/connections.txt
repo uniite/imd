@@ -1,0 +1,7 @@
+BTUART
+	txd (gpio43) = oled cs
+	rxd (gpio42) = oled dc
+	rts (gpio45) = oled res
+NSSP
+	SCLK = oled d0
+	MOSI = oled d1
