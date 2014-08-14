@@ -10,7 +10,11 @@ This was done before I knew about a lot of things, and I haven't touched the cod
  - Gumstix is overkill (I did try cheaper options, and they were significantly more difficult back then)
  - Should've used Doxygen-style comments
 
-#### Details/Pics for v1.5: http://www.jbotelho.com/?p=hw_ovw
+## Hardware
+Here's a picture of the prototype hardware, hooked up to USB, power, and headphones:
+![Prototype Hardware](https://s3.amazonaws.com/com_jbotelho_media/imd.png)
+
+The UI was controlled via a three-way rocker switch on the side, and a three-axis accelerometer (not visible here).
 
 
 ## Files
